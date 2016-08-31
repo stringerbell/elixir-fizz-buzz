@@ -2,10 +2,10 @@ defmodule FizzBuzz do
   def first(num) when is_integer(num) do
     {num, ""}
   end
-  def match({num, string}, div, add) when rem(num, div) == 0 do
-    {num, string <> add}
+  def match({num, string}, div, append) when rem(num, div) == 0 do
+    {num, string <> append}
   end
-  def match({num, string}, _div, _add) do
+  def match({num, string}, _div, _append) do
     {num, string}
   end
   def last({num, string}) when string == "" do
